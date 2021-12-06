@@ -1,0 +1,102 @@
+.category {
+    .posts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin-bottom: 30px;
+
+        article {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 45%;
+            flex-grow: 1;
+            margin: 0;
+            padding: 0;
+            border: 0;
+
+            .post-header {
+                margin-bottom: 10px;
+
+                img {
+                    height: 250px;
+                    object-fit: cover;
+                    border-radius: 5px;
+                }
+            }
+
+            .post-content {
+                .post-meta {
+                    margin-bottom: 10px;
+                    font-size: 1.2rem;
+                }
+
+                .post-title {
+                    font-size: 2rem;
+                    margin: 0 0 1rem 0;
+                    color: $vertikal--black;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $vertikal--red;
+                        text-decoration: none;
+                    }
+                }
+
+                .excerpt {
+                    margin: 0;
+                    color: $vertikal--gray;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $vertikal--red;
+                        text-decoration: none;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+.category-novosti {
+    .posts {
+        article:first-of-type {
+            flex-basis: 100%;
+            flex-direction: row;
+
+            .post-header {
+                width: 65%;
+                margin-right: 20px;
+                margin-bottom: 0;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .post-content {
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+	.category-novosti {
+        .posts {
+            article:first-of-type {
+                flex-basis: 45%;
+                flex-direction: column;
+
+                .post-header {
+                    width: 100%;
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+
+                .post-content {
+                    width: 100%;
+                }
+            }
+		}
+	}
+}

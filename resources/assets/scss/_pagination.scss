@@ -1,0 +1,40 @@
+.pagination {
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 30px 0;
+
+        li {
+            margin: 0 5px;
+            list-style: none;
+
+            .post-nav-newer {
+                float: none;
+            }
+        }
+
+        li a, 
+        li a:hover,
+        li.active a,
+        li.disabled {
+            color: #fff;
+            text-decoration:none;
+        }
+
+        li a,
+        li a:hover,
+        li.active a,
+        li.disabled {
+            background-color: $vertikal--red;
+            border-radius: 3px;
+            cursor: pointer;
+            padding: 10px 13px;
+        }
+            
+        li a:hover,
+        li.active a {
+            background-color: $vertikal--black;
+        }
+    }
+}

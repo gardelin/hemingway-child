@@ -1,0 +1,1 @@
+# hemingway wordpress child theme

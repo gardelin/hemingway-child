@@ -1,0 +1,169 @@
+@import 'variables';
+@import 'colors';
+@import 'fonts';
+@import 'category';
+@import 'pagination';
+
+html {
+	font-size: 62.5%;
+}
+
+.blog-logo {
+	span,
+	img { 
+		display: none;
+	}
+
+	a {
+		background: url('../img/vertikal.svg');
+		width: 300px;
+		height: 100px;
+		text-indent: -9999px;
+		width: 300px;
+		height: 150px;
+		background-size: 300px 150px;
+		filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.44));
+	}
+}
+
+.navigation {
+	.blog-menu {
+		justify-content: center;
+
+		li {
+			&::before {
+				display: none;
+			}
+
+			&[class^="icon-"],
+			&[class*=" icon-"] {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				&:before {
+					color: rgba(255, 255, 255, 0.5);
+					left: auto;
+					pointer-events: none;
+				}
+
+				&:hover:before {
+					color: white;
+				}
+
+				a {
+					font-size: 0;
+					padding: 0;
+					height: 67px;
+					width: 50px;
+				}
+			}
+
+			a {
+				&:hover {
+					background-color: $vertikal--red;
+				}
+			}	
+		}
+	}
+}
+
+@media (max-width: $breakpoint-mobile) {
+	.navigation {
+		.mobile-menu .menu-item:before{ 
+			display: none !important;
+		}
+	}
+}
+
+a.tothetop {
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 3px;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.credits.no-padding {
+	font-size: 1.2rem;
+
+	.credits-inner {
+		border-top: 1px solid rgba(255, 255, 255, 0.06);
+	}
+
+	.credits-right {
+		font-size: 1.6rem;
+	}
+}
+
+.patrons,
+.sponsors {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.sponsors-title,
+.patrons-title {
+	text-align: center;
+}
+
+@media (max-width: $breakpoint-mobile) {
+	.patrons,
+	.sponsors {
+		flex-direction: column;
+	}
+}
+
+.widget-content {
+	font-size: 1.6rem;
+}
+
+.post-nav {
+	.navigation li a,
+	.navigation li a:hover,
+	.navigation li.active a,
+	.navigation li.disabled {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.navigation li {
+		display: inline;
+	}
+
+	.navigation li a,
+	.navigation li a:hover,
+	.navigation li.active a,
+	.navigation li.disabled {
+		background-color: #6fb7e9;
+		border-radius: 3px;
+		cursor: pointer;
+		padding: 12px;
+		padding: 0.75rem;
+	}
+
+	.navigation li a:hover,
+	.navigation li.active a {
+		background-color: #3c8dc5;
+	}
+}
+
+.post-header {
+	.featured-media img {
+		margin: 0;
+		height: 400px;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+.sidebar .widget {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.post, .page {
+    border-bottom: 1px solid #eee;
+}
