@@ -3,15 +3,15 @@
     "version": "1.0.0",
     "description": "Child theme for Hemingway",
     "main": "gulpfile.js",
-    "dependencies": {
-        "prettier": "^2.5.1"
-    },
+    "dependencies": {},
     "devDependencies": {
+        "eslint": "^8.4.1",
         "gulp": "^4.0.2",
         "gulp-concat": "^2.6.1",
         "gulp-sass": "^5.0.0",
-        "gulp-zip": "^5.1.0",
         "gulp-uglify": "^3.0.2",
+        "gulp-zip": "^5.1.0",
+        "prettier": "^2.5.1",
         "sass": "^1.43.4"
     },
     "scripts": {
