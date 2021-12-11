@@ -14,12 +14,12 @@
             }
         }
 
-        li a, 
+        li a,
         li a:hover,
         li.active a,
         li.disabled {
             color: #fff;
-            text-decoration:none;
+            text-decoration: none;
         }
 
         li a,
@@ -31,7 +31,7 @@
             cursor: pointer;
             padding: 10px 13px;
         }
-            
+
         li a:hover,
         li.active a {
             background-color: $vertikal--red;

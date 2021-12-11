@@ -1,34 +1,35 @@
 {
-  "name": "hemingway-child",
-  "version": "1.0.0",
-  "description": "Child theme for Hemingway",
-  "main": "gulpfile.js",
-  "dependencies": {
-  },
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-sass": "^5.0.0",
-    "gulp-zip": "^5.1.0",
-    "gulp-uglify": "^3.0.2",
-    "sass": "^1.43.4"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gardelin/hemingway-child.git"
-  },
-  "keywords": [
-    "wordpress",
-    "child",
-    "theme"
-  ],
-  "author": "Roko Labrovic",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gardelin/hemingway-child/issues"
-  },
-  "homepage": "https://github.com/gardelin/hemingway-child#readme"
+    "name": "hemingway-child",
+    "version": "1.0.0",
+    "description": "Child theme for Hemingway",
+    "main": "gulpfile.js",
+    "dependencies": {
+        "prettier": "^2.5.1"
+    },
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-concat": "^2.6.1",
+        "gulp-sass": "^5.0.0",
+        "gulp-zip": "^5.1.0",
+        "gulp-uglify": "^3.0.2",
+        "sass": "^1.43.4"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gardelin/hemingway-child.git"
+    },
+    "keywords": [
+        "wordpress",
+        "child",
+        "theme"
+    ],
+    "author": "Roko Labrovic",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/gardelin/hemingway-child/issues"
+    },
+    "homepage": "https://github.com/gardelin/hemingway-child#readme"
 }

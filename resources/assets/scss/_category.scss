@@ -52,7 +52,7 @@
                         text-decoration: none;
                     }
                 }
-            } 
+            }
         }
     }
 }
@@ -81,7 +81,7 @@
 }
 
 @media (max-width: $breakpoint-mobile) {
-	.category-novosti {
+    .category-novosti {
         .posts {
             article:first-of-type {
                 flex-basis: 45%;
@@ -97,6 +97,6 @@
                     width: 100%;
                 }
             }
-		}
-	}
+        }
+    }
 }
