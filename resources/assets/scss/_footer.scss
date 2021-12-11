@@ -1,0 +1,21 @@
+.footer {
+    .widget {
+        padding: 0;
+        margin: 1rem;
+        border: 0;
+        
+        .widget-content {
+            font-size: 1.4rem;
+        }
+
+        .wp-block-latest-posts__list a {
+            color: inherit !important;
+            text-decoration: none !important;
+        }
+
+        .wp-block-page-list li {
+            border: none;
+            padding: 5px 0;
+        }
+    }
+}
