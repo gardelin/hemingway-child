@@ -3,10 +3,17 @@
 @import 'fonts';
 @import 'category';
 @import 'pagination';
+@import 'latest_posts';
 @import 'footer';
+@import 'pages/template_fullwidth';
 
 html {
     font-size: 62.5%;
+}
+
+::selection {
+    background: $vertikal--red;
+    color: white;
 }
 
 .blog-logo {
