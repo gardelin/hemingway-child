@@ -8,7 +8,10 @@
         overflow: hidden;
 
         .wp-block-latest-posts__featured-image {
+            margin-bottom: 20px;
+
             a {
+                display: flex;
                 width: 100%;
 
                 img {
@@ -32,8 +35,14 @@
         .wp-block-latest-posts__post-author,
         .wp-block-latest-posts__post-date,
         .wp-block-latest-posts__post-excerpt {
-            padding: 0 15px;
+            padding: 0 20px;
             box-decoration-break: clone;
+            font-size: 2rem;
+            text-decoration: none;
+        }
+
+        .wp-block-latest-posts__post-excerpt {
+            font-size: 1.6rem;
         }
     }
 }
