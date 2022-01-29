@@ -22,3 +22,5 @@ public/
 *.log
 *.sql
 *.sqlite
+
+dist
