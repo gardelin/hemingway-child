@@ -1,6 +1,7 @@
 let mix = require('laravel-mix');
 
 mix.setResourceRoot('../');
+mix.setPublicPath('public/assets');
 
 mix.copy('resources/assets/fonts', 'public/assets/fonts');
 mix.copy('resources/assets/img', 'public/assets/img');
