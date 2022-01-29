@@ -1,7 +1,9 @@
 #site-content .wp-block-latest-posts__list {
+    margin: 0;
+
     li {
-        // border: 1px solid #e6e2e2;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        border: 1px solid #eee;
+        // box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         border-radius: 3px;
         overflow: hidden;
 
