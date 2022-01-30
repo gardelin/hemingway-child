@@ -57,15 +57,21 @@ function register_widgets()
 }
 
 /**
- * Disable loading parent theme Lato and Railway fonts
+ * Override default theme font family
  * 
- * @return bool
+ * @return array
  */
-function hemingway_get_google_fonts_url()
+add_filter('hemingway_google_fonts_families', 'child_theme_font_family');
+function child_theme_font_family($fonts)
 {
-    return;
-}
+    return ['Sora:300,400,600,700'];
+};
 
+/**
+ * Set default theme excerpt length
+ * 
+ * @return int
+ */
 add_filter('excerpt_length', 'my_excerpt_length', 1);
 function my_excerpt_length($length)
 {
